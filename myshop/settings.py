@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'webpack_loader',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
 ]
 
 MIDDLEWARE = [
@@ -133,6 +134,12 @@ STATICFILES_DIRS = [
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+# Stripe settings
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51LgLz1ArjLKtQYYae18y2l3j3occKjWQCmVL6iRIPCATTvs8R5gZCzXEnRkXZNaxLp07KW2WEB3bWHnI3LRWV7J900plmKZw9n' # Publishable key
+STRIPE_SECRET_KEY = 'sk_test_51LgLz1ArjLKtQYYaaQuFxUgzro4HgH65qrRoN6bgpWm9M3FSIH97MAHJV3UgV79xWohgg6aDQqTK54UAqOljmACo00xEHUAqgX' # Secret key
+STRIPE_API_VERSION = '2022-08-01'
+
+STRIPE_WEBHOOK_SECRET ='whsec_e5002d53628b8d668f95bedd49a4e8412f06f53dbf7e70d4f708ead4a69b6828'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

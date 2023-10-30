@@ -144,6 +144,12 @@ STRIPE_API_VERSION = '2022-08-01'
 
 STRIPE_WEBHOOK_SECRET ='whsec_e5002d53628b8d668f95bedd49a4e8412f06f53dbf7e70d4f708ead4a69b6828'
 
+# Redis settings
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
